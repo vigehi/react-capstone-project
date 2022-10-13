@@ -1,75 +1,57 @@
-
-#BookStore
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
+![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+
+# React capstone project
+> A Single Page App built with React and Redux 
+> 
+## Built With :hammer_and_wrench: 
+
+- **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
+- **GitHub flow:**  Correct use of Branches for deployment and features development.
+- **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
+- **REACT JS:** JS library used for the basic structure.
+
+## Live Demo :arrow_forward:
+
+Link will be displayed here soon...
+
+## Set Up Guide :page_facing_up: 
+
+1. Use the following link for "$ git clone" the [repo](https://github.com/....) and cd reponame
+2. "npm install" to install all the dependencies
+
+3. "npm start" to run the live version locally
+
+4. "code ." To open the project on your local editor
+
+## Author :writing_hand: 
+
+:main_technologist:
+🙆‍♀️ **Edith Oga**
 
 
-<!-- ## Screenshot
+## 🤝 Contributing
 
-![screenshot](./images/home.png)
+Contributions, issues, and feature requests are welcome!
 
-![screenshot](./images/popup-small.png) -->
+Feel free to check the [issues page](../../issues/).
 
-## Built With
-- Major Languages: JAVASCRIPT, HTML, CSS
-- Major Technologies : Git, Github, Webpack, React, Redux
+## Acknowledgments
 
-### Prerequisites
-- npm ( Node Package Manager )
-- git and Github Account
-
-
-
-### Install linters
-- **Webhint** linter
-
-  `npm install --save-dev hint@6.x`
-
-- **Stylelint** linter
-
-  `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
-
-- **ESLint** linter
-
-  `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
-
-
-### Run linters
-- **Webhint** 
-linter -`npx hint .` on the root of your directory of your project.
-
-- **Stylelint** 
-linter - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-
-- **ESLint** linter
-  - `npx eslint .` on the root of your directory of your project.
-
-
-### Run project
-- Now run the following:
- `npm install`  - on the root directory of the project to install the required packages
- `npm start`   - on the root directory of the project to start the project 
-
-
-## Authors
-
-👤 **Richard Opiyo**
-
-- GitHub: [@richardoppiyo](https://github.com/richardoppiyo)
-- Twitter: [@blessed_ricky](https://twitter.com/blessed_ricky)
-- LinkedIn: [Richard Opiyo](https://linkedin.com/in/richardoppiyo)
-
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- To morning session team,reviewers and standup team members.
-
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
