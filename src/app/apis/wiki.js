@@ -20,36 +20,19 @@ const getApiData = async () => {
 
 export const displayposts = () => async (dispatch) => {
   const postss = await getApiData();
-  // const countriesArray = [];
-
-  // Object.keys(countries).forEach((country) => {
-  //   countriesArray.push({
-  //     id: countries[country].id,
-  //     name: countries[country].name,
-  //   });
-  // });
-
-  // id: ele.countryInfo._id,
-  //   country: ele.country,
-  //   cases: ele.cases,
-  //   image: ele.countryInfo.flag,
 
   const postsArray = postss.map((ele) => ({
-    // eslint-disable-next-line no-underscore-dangle
     id: ele.id,
     rendered: ele.title.rendered,
-    // author: ele.cases,
     jetpack_featured_media_url: ele.jetpack_featured_media_url,
   }));
 
-  // console.log(countriesArray);
   dispatch(load(postsArray));
 };
 
 export default function myReducer(state = init, action) {
   switch (action.type) {
     case LOAD:
-      // console.log('I am here!');
       return action.rendered;
     default:
       return state;

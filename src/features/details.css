@@ -2,7 +2,7 @@
  color: white;
 } */
 
-.upperpart {
+.top {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: gray;
 }
 
-.flag {
+.image {
   width: 140px;
   height: 150px;
 }
