@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+// import { BsArrowRightCircle } from 'react-icons/bs';
 import { displayposts } from '../app/apis/wiki';
 
 const Home = () => {
@@ -37,11 +38,7 @@ const Home = () => {
                <div key="{rendered.id}" className="innerdiv">
                  <img className="flag" src={`${rendered.jetpack_featured_media_url}`} alt="hello" />
                  <div className="detailer">
-                   {/* <BsArrowRightCircle /> */}
-                   <a href="/details/" key={`${rendered.id}`}>
-                     {' '}
-                     <BsArrowRightCircle />
-                   </a>
+                   <Link className="icon" to={`${rendered.id}`}>info</Link>
                    <p>{rendered.rendered}</p>
                  </div>
                </div>
