@@ -19,7 +19,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <h2>STATS BY COUNTRY</h2>
+      <h2>Posts</h2>
       <div className="search">
         <input
           className="input-search"
