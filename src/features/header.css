@@ -3,8 +3,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(133, 40, 110);
+}
+
+.head > p {
+  color: white;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .innerbox {
   display: flex;
+}
+
+.headicon {
+  color: white;
 }

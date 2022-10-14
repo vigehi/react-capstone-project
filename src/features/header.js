@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
-import { FaMicrophone } from 'react-icons/fa';
-import { AiOutlineSetting, AiOutlineSearch } from 'react-icons/ai';
+import { FaMicrophone, FaRegCommentDots, FaIceCream } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import './header.css';
 
@@ -14,11 +13,11 @@ const Header = ({ children }) => (
         <IoIosArrowBack />
         {' '}
       </NavLink>
-      <p>Most viewed</p>
+      <p>Best Technology Posts</p>
       <div className="innerbox">
         <p className="headicon"><FaMicrophone /></p>
-        <p className="headicon"><AiOutlineSetting /></p>
-        <p className="headicon"><AiOutlineSearch /></p>
+        <p className="headicon"><FaIceCream /></p>
+        <p className="headicon"><FaRegCommentDots /></p>
       </div>
     </header>
     {children}

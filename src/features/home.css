@@ -10,8 +10,9 @@
   max-width: 150px;
 
   /* align-items: baseline; */
-  background-color: aliceblue;
-  margin: 10px;
+  background-color: rgb(230, 134, 206);
+  margin: 5px;
+  border-radius: 20px;
 }
 
 .flag {
@@ -25,6 +26,24 @@
   align-items: flex-end;
 }
 
+.detailer > p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .headicon {
   padding: 10px;
 }
+
+h2 {
+  margin-left: 45%;
+}
+
+.search {
+  margin-left: 40%;
+}
+
+/* .heading {
+  margin-right: 10%;
+  margin-top: 30px;
+} */

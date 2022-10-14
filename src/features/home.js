@@ -38,7 +38,7 @@ const Home = () => {
                  <img className="flag" src={`${rendered.jetpack_featured_media_url}`} alt="hello" />
                  <div className="detailer">
                    {/* <BsArrowRightCircle /> */}
-                   <a href="/details">
+                   <a href="/details/" key={`${rendered.id}`}>
                      {' '}
                      <BsArrowRightCircle />
                    </a>
