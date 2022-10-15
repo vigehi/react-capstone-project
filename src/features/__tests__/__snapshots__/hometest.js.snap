@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the post list renders correctly 1`] = `
+exports[`Test the Post list renders correctly 1`] = `
 <div
   class="heading"
 >

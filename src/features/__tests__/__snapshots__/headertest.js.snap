@@ -10,6 +10,11 @@ exports[`renders correctly 1`] = `
       className="link-item active"
       href="/"
       onClick={[Function]}
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
     >
        
       <svg

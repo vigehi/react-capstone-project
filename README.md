@@ -49,6 +49,10 @@ Feel free to check the [issues page](../../issues/).
 - Inspiration
 - etc
 
+## Acknowledgments
+
+- To morning session team,reviewers and standup team members.
+- Design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## Show your support
 
