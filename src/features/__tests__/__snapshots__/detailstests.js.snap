@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test specific post 1`] = `
+exports[`Test specific post renders correctly 1`] = `
 <div
   class="heading"
 >
-  Enter a post
+  Enter a valid post!
 </div>
 `;

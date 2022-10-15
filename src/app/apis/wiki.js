@@ -13,21 +13,20 @@ export function load(rendered) {
 const getApiData = async () => {
   const res = await fetch('https://techcrunch.com/wp-json/wp/v2/posts?per_page=100&context=embed');
   const data = await res.json();
-
-  // console.log(data);
   return data;
 };
 
-export const displayposts = () => async (dispatch) => {
-  const postss = await getApiData();
+export const displayPosts = () => async (dispatch) => {
+  const posts = await getApiData();
 
-  const postsArray = postss.map((ele) => ({
+  const postArray = posts.map((ele) => ({
+    // eslint-disable-next-line no-underscore-dangle
     id: ele.id,
     rendered: ele.title.rendered,
     jetpack_featured_media_url: ele.jetpack_featured_media_url,
   }));
 
-  dispatch(load(postsArray));
+  dispatch(load(postArray));
 };
 
 export default function myReducer(state = init, action) {

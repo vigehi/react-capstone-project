@@ -4,12 +4,12 @@ import { render, screen } from '@testing-library/react';
 import Home from '../home';
 import store from '../../app/store';
 
-describe('Test the post', () => {
+describe('Test the Post list', () => {
   it('renders correctly', () => {
     const post = [
       {
-        post: 'Tata Power, a top power producer in India, confirms cyberattack',
-        info: '<p>Tata Power, a leading power generation company in India, has confirmed it was hit by a cyberattack. In a brief statement released on Friday, the Mumbai-based company said that the attack impacted some of its I.T. systems. &#8220;The company has taken steps to retrieve and restore the systems. All critical operational systems are functioning; however, [&hellip;]</p>',
+        id: 2424923,
+        info: 'Zombie startups',
       },
     ];
 
@@ -18,7 +18,7 @@ describe('Test the post', () => {
         <Home />
       </Provider>,
     );
-    const message = screen.getByText('Enter a post');
+    const message = screen.getByText('Enter a valid post!');
     expect(message).toMatchSnapshot();
   });
 });

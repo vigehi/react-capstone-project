@@ -1,27 +1,21 @@
-/* body {
- color: white;
-} */
-
-.top {
+.upperpart {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(230, 134, 206);
-  height: 400px;
+  height: 170px;
+  padding: 20px;
+  background-color:  rgb(241, 145, 217);
+  color: white;
 }
 
 .box {
-  width: 97%;
+  background-color: rgb(133, 40, 110);
+  width: 100%;
   margin: auto;
-  border: 2px solid;
-  background-color: rgb(230, 134, 206);
+  color: white;
 }
 
-.innerbox {
-  background-color: gray;
-}
-
-.image {
-  width: 500px;
-  height: 370px;
+.flag {
+  width: 140px;
+  height: 150px;
 }

@@ -9,7 +9,7 @@ export function load(rendered) {
   };
 }
 
-const getApipost = async () => {
+const getApiPost = async () => {
   const resp = await fetch('https://techcrunch.com/wp-json/wp/v2/posts?per_page=100&context=embed');
   const data = resp.json();
 
@@ -17,21 +17,17 @@ const getApipost = async () => {
 };
 
 export const displayPostInfo = () => async (dispatch) => {
-  const postData = await getApipost();
+  const postData = await getApiPost();
 
-  const postsArray = postData.map((ele) => ({
+  const postArray = postData.map((ele) => ({
     // eslint-disable-next-line no-underscore-dangle
     id: ele.id,
-    info: ele.title.rendered,
+    rendered: ele.title.rendered,
     jetpack_featured_media_url: ele.jetpack_featured_media_url,
     news: ele.excerpt.rendered,
-    // date: ele.parselyMeta.parsely-pub-date,
-    // author: ele.parselyMeta.parsely-author,
-    // section: ele.parselsection,yMeta.parsely-
   }));
 
-  console.log(postsArray);
-  dispatch(load(postsArray));
+  dispatch(load(postArray));
 };
 
 export default function detailsReducer(state = init, action) {

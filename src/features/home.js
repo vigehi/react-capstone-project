@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
 import { useDispatch, useSelector } from 'react-redux';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-// import { BsArrowRightCircle } from 'react-icons/bs';
-import { displayposts } from '../app/apis/wiki';
+import { displayPosts } from '../app/apis/wiki';
+// import handleSearch from './filter';
 
 const Home = () => {
   const postss = useSelector((state) => state.myred);
@@ -15,31 +16,41 @@ const Home = () => {
 
   useEffect(() => {
     if (postss.length === 0) {
-      dispatch(displayposts());
+      dispatch(displayPosts());
     }
   }, []);
+
   return (
     <>
-      <h2>Posts</h2>
-      <div className="search">
-        <input
-          className="input-search"
-          placeholder="Search by post name"
-          value={location}
-          onChange={(e) => { setLocation(e.target.value); }}
-        />
+      <div className="uppediv">
+        <h4 style={{ width: '50%' }}>More info</h4>
+      </div>
+      <div className="searchitems">
+        <h4 className="headtext">Explanaton</h4>
+        <div className="search">
+          <input
+            className="input-search"
+            placeholder="Search by post"
+            value={location}
+            onChange={(e) => { setLocation(e.target.value); }}
+          />
+        </div>
       </div>
       <div className="holder">
         {
            !filtered.length ? (
-             <div className="heading">Enter a post</div>
+             <div className="heading">Enter a valid post!</div>
            ) : (
              filtered.map((rendered) => (
                <div key="{rendered.id}" className="innerdiv">
-                 <img className="flag" src={`${rendered.jetpack_featured_media_url}`} alt="hello" />
+                 <div className="insidediv">
+                   <Link to={`/Details/${rendered.rendered}`} style={{ color: '#fff' }}>
+                     <BsArrowRightCircle />
+                   </Link>
+                 </div>
+                 <img className="flag" src={`${rendered.jetpack_featured_media_url}`} alt="home" />
                  <div className="detailer">
-                   <Link className="icon" to={`${rendered.id}`}>info</Link>
-                   <p>{rendered.rendered}</p>
+                   <p className="postname">{rendered.rendered}</p>
                  </div>
                </div>
              ))
