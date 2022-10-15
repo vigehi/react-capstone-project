@@ -19,6 +19,9 @@
 
 Link will be displayed here soon...
 
+## Loom video
+[video](https://www.loom.com/share/6f0a5e3181f94cc4acaebc503d47335d)
+
 ## Set Up Guide :page_facing_up: 
 
 1. Use the following link for "$ git clone" the [repo](https://github.com/....) and cd reponame
