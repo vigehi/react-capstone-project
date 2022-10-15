@@ -17,7 +17,7 @@
 
 ## Live Demo :arrow_forward:
 
-Link will be displayed here soon...
+[Link will be displayed here soon...](https://deploy-preview-4--whimsical-choux-fb6e7b.netlify.app/)
 
 ## Loom video
 [video](https://www.loom.com/share/6f0a5e3181f94cc4acaebc503d47335d)
