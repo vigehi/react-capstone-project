@@ -7,7 +7,7 @@ import './details.css';
 const Details = () => {
   const param = useParams();
   const postss = useSelector((store) => store.details);
-  const filtered = postss.filter((item) => item.country === param.country);
+  const filtered = postss.filter((item) => item.rendered === param.rendered);
   const dispatch = useDispatch();
 
   useEffect(() => {
