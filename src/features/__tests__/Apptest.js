@@ -1,17 +1,17 @@
-// import React from 'react';
-// import renderer from 'react-test-renderer';
-// import { cleanup } from '@testing-library/react';
-// import { Provider } from 'react-redux';
-// import store from '../../app/store';
-// import App from '../../App';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { cleanup } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import store from '../../app/store';
+import App from '../../App';
 
-// afterEach(() => cleanup());
+afterEach(() => cleanup());
 
-// it('App Renders Correctly', () => {
-//   const tree = renderer.create(
-//     <Provider store={store}>
-//       <App />
-//     </Provider>,
-//   ).toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+it('App Renders Correctly', () => {
+  const tree = renderer.create(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
